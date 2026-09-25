@@ -1,0 +1,6 @@
+{
+  "name": "Center of Excellence, Kotri",
+  "description": "Official admissions and technical education portal for Center of Excellence, Kotri (Old name: TTC Kotri). Affiliated with STEVTA, Government of Sindh. Skills is the Key to Success.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #0c2d6b;
+    --primary-light: #1852b4;
+    --primary-dark: #071a40;
+    --primary-rgb: 12, 45, 107;
+    
+    --accent-gold: #d4af37;
+    --accent-gold-rgb: 212, 175, 55;
+    --accent-amber: #e5a925;
+    
+    --accent-red: #c52222;
+    --accent-red-rgb: 197, 34, 34;
+
+    --accent-green: #047857;
+    --accent-green-rgb: 4, 120, 87;
+
+    --background: #f8fafc;
+    --surface: #ffffff;
+    --surface-elevated: #ffffff;
+    --surface-dark: #071a40;
+    --surface-navy: #0c2d6b;
+
+    --text: #0f172a;
+    --text-muted: #475569;
+    --text-light: #94a3b8;
+    --border: #e2e8f0;
+    --border-dark: rgba(255, 255, 255, 0.12);
+
+    --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-urdu: 'Noto Nastaliq Urdu', serif;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--background);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+.font-urdu {
+  font-family: var(--font-urdu);
+}
+
+/* Institutional Design System Utilities */
+.bg-coe-primary {
+  background-color: #0c2d6b;
+}
+
+.bg-coe-dark {
+  background-color: #071a40;
+}
+
+.text-coe-primary {
+  color: #0c2d6b;
+}
+
+.text-coe-gold {
+  color: #d4af37;
+}
+
+.text-coe-red {
+  color: #c52222;
+}
+
+.border-coe-gold {
+  border-color: #d4af37;
+}
+
+.badge-gold {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(229, 169, 37, 0.08) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: #92640b;
+}
+
+.badge-blue {
+  background: linear-gradient(135deg, rgba(12, 45, 107, 0.08) 0%, rgba(24, 82, 180, 0.05) 100%);
+  border: 1px solid rgba(12, 45, 107, 0.2);
+  color: #0c2d6b;
+}
+
+.card-shadow {
+  box-shadow: 0 4px 20px -2px rgba(12, 45, 107, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.card-shadow-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-shadow-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px -4px rgba(12, 45, 107, 0.12), 0 4px 12px -2px rgba(0, 0, 0, 0.06);
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
